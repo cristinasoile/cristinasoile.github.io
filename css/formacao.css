@@ -1,0 +1,344 @@
+.subtitulo1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+  word-break: break-all;
+  max-width: 6ch;
+}
+
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.formacao_bg {
+  background: #141414;
+}
+
+.formacao_texto {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 50px;
+  color: #7a7a7a;
+  max-width: 40ch;
+}
+
+.formacao_texto strong {
+  color: #b8b8b8;
+}
+
+.faculdade_lista {
+  color: #7a7a7a;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.faculdade {
+  flex: 1;
+  background-color: #000000;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.faculdade_tipo {
+  text-transform: uppercase;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+.faculdade_curso {
+  flex: 1;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.faculdade_instituicao {
+  /* border: 2px solid red; */
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #7a7a7a;
+  text-transform: uppercase;
+}
+
+.faculdade_instituicao::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 10px;
+  left: -20px;
+  top: 100px;
+  transform: rotate(90deg);
+  background: url("../img/traço.svg");
+}
+
+.formacao_extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao_extra h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #7a7a7a;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+.curso ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formacao_extra span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #b8b8b8;
+}
+
+.curso {
+  margin-bottom: 20px;
+}
+
+.curso h3 {
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.curso h3::before {
+  content: "";
+  background: url("../img/menu_book_FILL0_wght400_GRAD0_opsz48.svg") no-repeat
+    center;
+  height: 30px;
+  width: 30px;
+  top: -5px;
+  left: -40px;
+  position: absolute;
+}
+
+.curso li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #e0e0e0;
+  line-height: 21px;
+  position: relative;
+}
+
+.curso p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #7a7a7a;
+  left: 210px;
+  align-self: center;
+  position: absolute;
+}
+
+.curso span {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: end;
+  color: #e0e0e0;
+}
+
+.idiomas li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: #e0e0e0;
+  line-height: 21px;
+  position: relative;
+}
+
+.idiomas h3 {
+  position: relative;
+}
+
+.idiomas h3:before {
+  content: "";
+  background: url("../img/language_FILL0_wght400_GRAD0_opsz48.svg") no-repeat
+    center;
+  height: 30px;
+  width: 30px;
+  top: -5px;
+  left: -37px;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .subtitulo1 {
+    color: black;
+    word-break: normal;
+    font-size: 3rem;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .formacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 700px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .formacao_texto {
+    max-width: 600px;
+    font-size: 1.1rem;
+    max-width: 58ch;
+    /* border: 1px solid red; */
+  }
+
+  .faculdade_lista {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .faculdade {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .faculdade_tipo {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+  }
+
+  .faculdade_curso {
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .faculdade_instituicao::before {
+    display: none;
+  }
+
+  .faculdade_instituicao {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .formacao_extra h3 {
+    font-size: 0.8rem;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .formacao_extra li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+  }
+
+  .formacao_extra span {
+    font-size: 0.8rem;
+    line-height: 0;
+    /* border: 1px solid red; */
+    align-items: center;
+  }
+  .curso span {
+    display: flex;
+    justify-content: start;
+  }
+
+  .curso li {
+    height: 30px;
+    display: flex;
+    align-items: end;
+  }
+
+  .curso p {
+    font-size: 0.8rem;
+    width: 80%;
+    justify-content: end;
+    display: flex;
+    align-items: end;
+    height: 30px;
+  }
+
+  .idiomas li {
+    font-size: 0.8rem;
+    position: relative;
+  }
+
+  .idiomas h3 {
+    font-size: 0.8rem;
+    position: relative;
+  }
+
+  .idiomas span {
+    font-size: 0.5rem;
+    align-self: center;
+    margin-left: 5px;
+  }
+
+  .curso h3::before {
+    display: none;
+  }
+  .idiomas h3:before {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .curso p {
+    font-size: 0.8rem;
+    width: 50%;
+    justify-content: end;
+    display: flex;
+    align-items: end;
+    height: 30px;
+  }
+}

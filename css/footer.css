@@ -1,0 +1,159 @@
+.rodape_bg {
+  background-color: black;
+}
+
+.subtitulo {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+  word-break: break-all;
+  max-width: 4ch;
+  color: #141414;
+  position: relative;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contato_lista {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.8;
+  color: #ffffff;
+  gap: 20px;
+}
+
+footer {
+  position: relative;
+}
+
+footer::before {
+  background: url("../img/tracinhos.svg") no-repeat center;
+  content: "";
+  width: 300px;
+  height: 250px;
+  top: -120px;
+  left: -100px;
+  position: absolute;
+}
+/* .contato_lista li {
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px; 
+} */
+
+.contato p {
+  grid-column: 1/-1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #525252;
+  text-align: center;
+}
+
+.topo {
+  position: absolute;
+  /* border: 2px solid red; */
+  right: 0px;
+  top: 180px;
+}
+
+.contato_lista a {
+  text-decoration: none;
+}
+
+.contato_lista a:visited {
+  color: white;
+}
+
+.contato_lista a:hover {
+  color: #b40e0e;
+}
+.redeSociais {
+  margin-top: 50px;
+  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 800px) {
+  .contato {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 600px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .subtitulo {
+    word-break: normal;
+    font-size: 3rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  .contato_lista {
+    font-size: 0.875rem;
+    gap: 10px;
+    text-align: center;
+    max-width: 600px;
+  }
+  .redeSociais {
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* border: 1px solid red; */
+  }
+
+  footer::before {
+    display: none;
+  }
+
+  .contato p {
+    grid-column: 1/-1;
+    font-size: 0.6rem;
+    color: #525252;
+    text-align: center;
+    max-width: 600px;
+    /* border: 1px solid red; */
+  }
+
+  .topo {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    width: 30px;
+    /* border: 2px solid red; */
+  }
+}
+
+@media (max-width: 600px) {
+  .topo {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    width: 30px;
+    /* border: 2px solid red; */
+  }
+}

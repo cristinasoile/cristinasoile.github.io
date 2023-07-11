@@ -1,0 +1,82 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.125;
+  color: #141414;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: " ";
+  display: block;
+  background: url("../img/tracinhos.svg") no-repeat center;
+  width: 67px;
+  height: 88px;
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  top: -10px;
+}
+
+.introducao p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: #666666;
+}
+
+@media (max-width: 800px) {
+  .introducao h1 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .introducao h1::before {
+    content: " ";
+    display: block;
+    background: url("../img/tracinhos.svg") no-repeat center;
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: -10px;
+  }
+  .introducao {
+    gap: 20px;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao h1 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 60%;
+    padding: 20px 10px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
